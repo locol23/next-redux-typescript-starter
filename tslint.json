@@ -1,0 +1,25 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "interface-over-type-literal": false,
+    "object-literal-sort-keys": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "variable-name": false,
+    "interface-name": false,
+    "prettier": [
+      true, {
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "bracketSpacing": true,
+        "trailingComma": "es5"
+      }
+    ]
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"]
+}
