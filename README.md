@@ -2,6 +2,16 @@
 
 A boilerplate of Server Side Rendering with Next.js
 
+# Libraries
+
+- React
+- Redux
+- Next
+- Styled-Components
+- Recompose
+- Jest
+- TypeScript
+
 # Setup
 
 ```
