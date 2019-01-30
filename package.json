@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "next src",
     "build": "next build src",
-    "start": "next start src"
+    "start": "next start src",
+    "performance": "autocannon -c 100 http://localhost:3000"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
@@ -34,6 +35,7 @@
     "@types/storybook__react": "^4.0.0",
     "@types/styled-components": "^4.1.6",
     "@zeit/next-typescript": "^1.1.1",
+    "autocannon": "^3.2.0",
     "babel-plugin-styled-components": "^1.10.0",
     "jest": "^23.6.0",
     "jest-styled-components": "^6.3.1",
