@@ -9,7 +9,8 @@
     "build": "next build src",
     "start": "next start src",
     "performance": "autocannon -c 100 http://localhost:3000",
-    "deploy": "yarn build && next export src && netlify deploy -p"
+    "deploy": "yarn build && next export src && netlify deploy -p",
+    "test": "jest --coverage"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
