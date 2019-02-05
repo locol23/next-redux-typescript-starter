@@ -3,4 +3,4 @@ node_modules/
 *-error.log
 coverage/
 out/
-.netlify
+.netlify/

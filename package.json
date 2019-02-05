@@ -8,7 +8,8 @@
     "dev": "next src",
     "build": "next build src",
     "start": "next start src",
-    "performance": "autocannon -c 100 http://localhost:3000"
+    "performance": "autocannon -c 100 http://localhost:3000",
+    "deploy": "yarn build && next export src && netlify deploy -p"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
@@ -39,6 +40,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "jest": "^23.6.0",
     "jest-styled-components": "^6.3.1",
+    "netlify-cli": "^2.6.6",
     "prettier": "^1.15.3",
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.1",
