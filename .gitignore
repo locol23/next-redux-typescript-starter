@@ -2,3 +2,5 @@ node_modules/
 .next
 *-error.log
 coverage/
+out/
+.netlify/
