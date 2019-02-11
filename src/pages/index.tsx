@@ -1,5 +1,5 @@
-import React from 'react'
 import { Store } from 'redux'
+import React from 'react'
 import { App } from '../containers/App'
 import { AllAction, RootState } from '../reducers'
 import { setTitle } from '../reducers/app'
