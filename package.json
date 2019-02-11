@@ -41,7 +41,7 @@
     "autocannon": "^3.2.0",
     "babel-plugin-styled-components": "^1.10.0",
     "eslint": "^5.13.0",
-    "eslint-config-everywhere": "^0.0.2",
+    "eslint-config-everywhere": "^0.1.0",
     "jest": "^23.6.0",
     "jest-styled-components": "^6.3.1",
     "netlify-cli": "^2.6.6",
