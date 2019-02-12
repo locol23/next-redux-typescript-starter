@@ -1,2 +1,2 @@
 [build]
-publish = "src/out/"
+publish = "out/"
