@@ -7,8 +7,8 @@ import Document, {
 import React from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
-type Props = {
-  styleTags: Array<React.ReactElement<{}>>
+interface Props {
+  styleTags: React.ReactElement<{}>[]
 }
 
 export default class MyDocument extends Document<Props> {
@@ -23,7 +23,7 @@ export default class MyDocument extends Document<Props> {
 
   public render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <meta charSet="utf-8" key="charSet" />
           <meta
