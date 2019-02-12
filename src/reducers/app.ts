@@ -7,11 +7,11 @@ export const setTitle = (v: string) => ({
 
 export type AppAction = ReturnType<typeof setTitle>
 
-export type AppState = typeof initialState
-
 export const initialState = {
   title: '',
 }
+
+export type AppState = typeof initialState
 
 export const reducer = (state = initialState, action: AppAction) => {
   if (action.type === SET_TITLE) {
