@@ -11,6 +11,7 @@ Index.getInitialProps = async ({
 }: {
   store: Store<RootState, AllAction>
 }) => {
+  // redux
   store.dispatch(setTitle('Server Side Rendering'))
 }
 
