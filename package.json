@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "performance": "autocannon -c 100 http://localhost:3000",
-    "deploy": "yarn build && next export && netlify deploy -p",
+    "deploy": "yarn build && next export && firebase deploy",
     "test": "jest --coverage",
     "lint": "eslint **/*.{ts,tsx}"
   },
@@ -43,9 +43,9 @@
     "babel-plugin-styled-components": "1.10.0",
     "eslint": "5.13.0",
     "eslint-config-everywhere": "0.1.0",
+    "firebase-tools": "^6.4.0",
     "jest": "23.6.0",
     "jest-styled-components": "6.3.1",
-    "netlify-cli": "2.6.6",
     "prettier": "1.15.3",
     "ts-jest": "23.10.5",
     "typescript": "3.3.3333"
