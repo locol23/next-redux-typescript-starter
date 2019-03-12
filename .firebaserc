@@ -1,5 +1,5 @@
 {
   "projects": {
-    "next-redux-typescript-starter": "next-redux-typescript-starter"
+    "default": "next-redux-typescript-starter"
   }
 }
