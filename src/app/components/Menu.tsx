@@ -1,29 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link as RoutesLink } from '../routes'
+import Link from 'next/link'
 import { Layout } from './Layout'
 
 export const Menu = () => (
   <Layout>
     <ButtonLayout>
-      <RoutesLink route="index">
+      <Link href="index">
         <button type="button">index</button>
-      </RoutesLink>
+      </Link>
     </ButtonLayout>
     <ButtonLayout>
-      <RoutesLink route="about">
+      <Link href="about">
         <button type="button">about</button>
-      </RoutesLink>
+      </Link>
     </ButtonLayout>
     <ButtonLayout>
-      <RoutesLink route="dynamicImport">
+      <Link href="dynamicImport">
         <button type="button">Dynamic Import</button>
-      </RoutesLink>
+      </Link>
     </ButtonLayout>
     <ButtonLayout>
-      <RoutesLink route="lazyLoad">
+      <Link href="lazyLoad">
         <button type="button">Lazy Load</button>
-      </RoutesLink>
+      </Link>
     </ButtonLayout>
   </Layout>
 )

@@ -4,5 +4,5 @@ node_modules/
 coverage/
 out/
 .firebase/
-.firebase-debug.log
-
+firebase-debug.log
+dist

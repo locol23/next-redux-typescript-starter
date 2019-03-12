@@ -4,16 +4,26 @@
   "main": "index.js",
   "author": "Yoshitaka Terazawa",
   "license": "MIT",
+  "engines": {
+    "node": "8"
+  },
   "scripts": {
-    "dev": "node server.js",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "dev": "next src/app",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "typecheck-app": "tsc --project src/app",
+    "build-functions": "tsc --project src/functions",
+    "build-app": "next build src/app",
+    "copy-deps": "cpx \"*{package.json,package-lock.json,yarn.lock}\" \"dist/functions\" -C",
+    "install-deps": "cd dist/functions && yarn",
+    "build-public": "cpx src/public/**/*.* dist/public -C",
     "performance": "autocannon -c 100 http://localhost:3000",
-    "deploy": "yarn build && next export && firebase deploy",
-    "test": "jest --coverage",
-    "lint": "eslint **/*.{ts,tsx}"
+    "deploy": "firebase deploy",
+    "test": "jest --coverage"
   },
   "dependencies": {
+    "firebase-admin": "^7.0.0",
+    "firebase-functions": "^2.2.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.0.0",
     "next-redux-wrapper": "^2.1.0",
@@ -38,15 +48,20 @@
     "@types/redux": "3.6.0",
     "@types/storybook__react": "4.0.0",
     "@types/styled-components": "4.1.6",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@zeit/next-typescript": "1.1.1",
     "autocannon": "3.2.0",
     "babel-plugin-styled-components": "1.10.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^5.2.0",
     "eslint": "5.13.0",
     "eslint-config-everywhere": "0.1.0",
     "firebase-tools": "^6.4.0",
     "jest": "23.6.0",
     "jest-styled-components": "6.3.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "1.15.3",
+    "rimraf": "^2.6.3",
     "ts-jest": "23.10.5",
     "typescript": "3.3.3333"
   }

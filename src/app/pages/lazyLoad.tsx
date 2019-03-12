@@ -26,9 +26,7 @@ LazyLoadComponent.getInitialProps = async () => {
   // lazy load
   const data = await fetch(
     'https://hacker-news.firebaseio.com/v0/topstories.json'
-  )
-    .then(r => r.json())
-    .catch(error => console.log(error))
+  ).then(r => r.json())
   return { res: data }
 }
 
