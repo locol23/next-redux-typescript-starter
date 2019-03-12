@@ -9,8 +9,6 @@
   },
   "scripts": {
     "dev": "next src/app",
-    "preserve": "run-s build-public build-functions build-app copy-deps install-deps",
-    "serve": "cross-env NODE_ENV=production firebase serve",
     "clean": "rimraf dist",
     "lint": "eslint src/**/*.{ts,tsx}",
     "typecheck-app": "tsc --project src/app",
