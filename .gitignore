@@ -6,3 +6,4 @@ out/
 .firebase/
 firebase-debug.log
 dist
+.envrc
