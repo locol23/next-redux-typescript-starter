@@ -48,7 +48,7 @@
     "@types/redux": "3.6.0",
     "@types/storybook__react": "4.0.0",
     "@types/styled-components": "4.1.6",
-    "@typescript-eslint/eslint-plugin": "1.4.2",
+    "@typescript-eslint/eslint-plugin": "1.5.0",
     "@zeit/next-typescript": "1.1.1",
     "autocannon": "3.2.1",
     "babel-plugin-styled-components": "1.10.0",
