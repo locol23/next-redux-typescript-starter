@@ -1,7 +1,7 @@
 import React from 'react'
 import fetch from 'isomorphic-unfetch'
-import styled from 'styled-components'
-import { Layout } from '../components/Layout'
+import styled from '@emotion/styled'
+import { Layout } from '../components/utils/Layout'
 
 const LazyLoadComponent = (props: { res: string[] }) => (
   <React.Fragment>
@@ -32,6 +32,5 @@ LazyLoadComponent.getInitialProps = async () => {
 
 export default LazyLoadComponent
 
-const Note = styled.div`
-  margin-bottom: 20px;
-`
+const Note = styled.div({ marginBottom: 20 })
+

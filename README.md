@@ -4,19 +4,19 @@ A boilerplate of Server Side Rendering with Next.js
 
 # Libraries
 
+- now
 - React
 - Redux
 - Next
-- Styled-Components
-- Recompose
+- emotion
 - Jest
 - TypeScript
 
 # Setup
 
 ```
-git clone https://github.com/locol23/ssr-next-redux-typescript-boilerplate.git
-cd ssr-next-redux-typescript-boilerplate
+git clone https://github.com/locol23/next-redux-typescript-starter.git
+cd next-redux-typescript-starter
 yarn
 ```
 
@@ -29,6 +29,5 @@ yarn dev
 # Production
 
 ```
-yarn build
-yarn start
+yarn deploy
 ```

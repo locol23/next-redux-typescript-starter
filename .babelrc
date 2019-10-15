@@ -1,0 +1,15 @@
+{
+  "presets": [
+    "next/babel",
+    "@zeit/next-typescript/babel",
+    "@emotion/babel-preset-css-prop"
+  ],
+  "plugins": [
+    [
+      "emotion",
+      {
+        "labelFormat": "[dirname]-[filename]-[local]"
+      }
+    ]
+  ]
+}

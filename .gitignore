@@ -2,8 +2,4 @@ node_modules/
 .next
 *-error.log
 coverage/
-out/
-.firebase/
-firebase-debug.log
-dist
-.envrc
+

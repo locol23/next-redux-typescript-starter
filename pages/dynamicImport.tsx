@@ -1,6 +1,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-import { Layout } from '../components/Layout'
+import { Layout } from '../components/utils/Layout'
 
 const Loading = () => (
   <React.Fragment>
@@ -9,7 +9,7 @@ const Loading = () => (
 )
 
 const DynamicComponent = dynamic({
-  loader: () => import('../components/Dynamic') as any,
+  loader: () => import('../components/organisms/Dynamic') as any,
   loading: Loading,
 })
 
