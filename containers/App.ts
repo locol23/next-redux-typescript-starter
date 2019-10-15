@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { Dispatch } from 'redux'
-import { App as AppComponent } from '../components/App'
+import { App as AppComponent } from '../components/organisms/App'
 import { RootState } from '../reducers'
 import { setTitle } from '../reducers/app'
 

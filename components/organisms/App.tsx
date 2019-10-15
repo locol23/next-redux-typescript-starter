@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import { AppAction, AppState } from '../reducers/app'
-import { Header } from './Header'
+import { AppAction, AppState } from '../../reducers/app'
+import { Header } from '../molecules/Header'
 
-interface Props {
+type Props = {
   app: AppState
   setTitle: (v: string) => AppAction
 }

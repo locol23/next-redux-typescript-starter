@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "alias": "next-redux-typescript-starter",
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }]
+}
