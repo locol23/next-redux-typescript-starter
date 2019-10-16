@@ -1,5 +1,5 @@
 import withRedux from 'next-redux-wrapper'
-import { AppProps, Container, DefaultAppIProps, NextAppContext } from 'next/app'
+import { AppContext, AppInitialProps, AppProps, Container } from 'next/app'
 import Head from 'next/head'
 import React from 'react'
 import { Global, css } from '@emotion/core'
@@ -9,7 +9,7 @@ import { configureStore } from '../store/configureStore'
 import { Menu } from '../components/molecules/Menu'
 import { normalize } from '../constants/normalize'
 
-type Props = { store: Store } & DefaultAppIProps & AppProps
+type Props = { store: Store } & AppInitialProps & AppProps
 
 const App = (props: Props) => {
   return (
@@ -30,7 +30,7 @@ const App = (props: Props) => {
   )
 }
 
-App.getInitialProps = async ({ Component, ctx }: NextAppContext) => {
+App.getInitialProps = async ({ Component, ctx }: AppContext) => {
   return {
     pageProps: {
       ...(Component.getInitialProps

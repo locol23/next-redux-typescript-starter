@@ -33,4 +33,3 @@ LazyLoadComponent.getInitialProps = async () => {
 export default LazyLoadComponent
 
 const Note = styled.div({ marginBottom: 20 })
-

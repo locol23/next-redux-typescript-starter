@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "jsx": "react",
+    "jsx": "preserve",
     "lib": ["dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
@@ -13,7 +13,13 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
-  "include": ["./**/*", "./**/**/*"]
+  "include": ["./**/*", "./**/**/*"],
+  "exclude": ["node_modules"]
 }
