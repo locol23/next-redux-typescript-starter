@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next",
     "clean": "rimraf .next",
-    "lint": "eslint **/*.{ts,tsx}",
+    "lint": "eslint --ext .ts,.tsx pages/ components/ containers/ store/ reducers/ ",
     "typecheck": "tsc -p .",
     "performance": "autocannon -c 100 http://localhost:3000",
     "deploy": "run-s lint test && now --target production",
@@ -18,7 +18,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^8.0.0",
+    "next": "^9.1.1",
     "next-redux-wrapper": "^2.1.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

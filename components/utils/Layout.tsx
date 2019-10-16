@@ -4,4 +4,3 @@ export const Layout = styled.div({
   display: 'flex',
   justifyContent: 'center',
 })
-
