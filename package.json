@@ -37,7 +37,6 @@
     "@types/redux": "3.6.0",
     "@types/storybook__react": "4.0.0",
     "@typescript-eslint/eslint-plugin": "1.5.0",
-    "@zeit/next-typescript": "1.1.1",
     "autocannon": "3.2.1",
     "babel-plugin-emotion": "^10.0.9",
     "cpx": "1.5.0",
