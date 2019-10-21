@@ -42,6 +42,19 @@ jobs:
       - run:
           name: build
           command: yarn build
+  deploy:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/repo
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: install now
+          command: yarn global add now
+      - run:
+          name: deploy
+          command: yarn deploy
 
 workflows:
   version: 2
@@ -54,4 +67,11 @@ workflows:
       - build:
           requires:
             - install
+      - deploy:
+          requires:
+            - test
+            - build
+          filters:
+            branches:
+              only: master
 
