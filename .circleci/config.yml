@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   install:
-    working_directory: ~/repo
+    working_directory: ~/next-redux-typescript-starter
     docker:
       - image: circleci/node:11.12.0
     steps:
@@ -16,17 +16,17 @@ jobs:
           paths:
             - ./node_modules
       - persist_to_workspace:
-          root: ~/repo
+          root: ~/next-redux-typescript-starter
           paths:
             - ./node_modules
   test:
-    working_directory: ~/repo
+    working_directory: ~/next-redux-typescript-starter
     docker:
       - image: circleci/node:11.12.0
     steps:
       - checkout
       - attach_workspace:
-          at: ~/repo
+          at: ~/next-redux-typescript-starter
       - run:
           name: test
           command: yarn test
@@ -34,28 +34,28 @@ jobs:
           path: coverage
           prefix: coverage
   build:
-    working_directory: ~/repo
+    working_directory: ~/next-redux-typescript-starter
     docker:
       - image: circleci/node:11.12.0
     steps:
       - checkout
       - attach_workspace:
-          at: ~/repo
+          at: ~/next-redux-typescript-starter
       - run:
           name: build
           command: yarn build
       - persist_to_workspace:
-          root: ~/repo
+          root: ~/next-redux-typescript-starter
           paths:
             - ./.next
   deploy:
     docker:
       - image: circleci/node:11.12.0
-    working_directory: ~/repo
+    working_directory: ~/next-redux-typescript-starter
     steps:
       - checkout
       - attach_workspace:
-          at: ~/repo
+          at: ~/next-redux-typescript-starter
       - run:
           name: install now
           command: yarn global add now
