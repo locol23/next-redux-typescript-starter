@@ -5,12 +5,12 @@
   "author": "Yoshitaka Terazawa",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
     "clean": "rimraf .next",
+    "dev": "next",
+    "build": "tsc -p . && run-s lint && next build",
     "lint": "eslint --ext .ts,.tsx pages/ components/ containers/ store/ reducers/ ",
-    "typecheck": "tsc -p .",
     "performance": "autocannon -c 100 http://localhost:3000",
-    "deploy": "run-s lint test && now --target production",
+    "deploy": "now --target production -t $NOW_TOKEN",
     "test": "jest --coverage"
   },
   "dependencies": {
