@@ -10,7 +10,7 @@
     "build": "tsc -p . && run-s lint && next build",
     "lint": "eslint --ext .ts,.tsx pages/ components/ containers/ store/ reducers/ ",
     "performance": "autocannon -c 100 http://localhost:3000",
-    "deploy": "now --target production -t $NOW_TOKEN",
+    "deploy": "now --prod -t $NOW_TOKEN",
     "test": "jest --coverage"
   },
   "dependencies": {
