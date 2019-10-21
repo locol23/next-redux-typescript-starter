@@ -18,12 +18,13 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths:
-            - ./*
+            - ./node_modules
   test:
     working_directory: ~/repo
     docker:
       - image: circleci/node:11.12.0
     steps:
+      - checkout
       - attach_workspace:
           at: ~/repo
       - run:
@@ -37,16 +38,22 @@ jobs:
     docker:
       - image: circleci/node:11.12.0
     steps:
+      - checkout
       - attach_workspace:
           at: ~/repo
       - run:
           name: build
           command: yarn build
+      - persist_to_workspace:
+          root: ~/repo
+          paths:
+            - ./.next
   deploy:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:11.12.0
     working_directory: ~/repo
     steps:
+      - checkout
       - attach_workspace:
           at: ~/repo
       - run:
@@ -64,12 +71,14 @@ workflows:
       - test:
           requires:
             - install
+          filters:
+            branches:
+              ignore: master
       - build:
           requires:
             - install
       - deploy:
           requires:
-            - test
             - build
           filters:
             branches:
