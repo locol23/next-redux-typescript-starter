@@ -7,14 +7,17 @@ type Props = {
   setTitle: (v: string) => AppAction
 }
 
-export const App = (props: Props) => {
-  useEffect(() => {
-    props.setTitle('Client Side Rendering')
-  }, [])
+export const App: React.FC<Props> = ({ setTitle, app }) => {
+  useEffect(
+    () => {
+      setTitle('Client Side Rendering')
+    },
+    [setTitle]
+  )
 
   return (
-    <React.Fragment>
-      <Header title={props.app.title} />
-    </React.Fragment>
+    <>
+      <Header title={app.title} />
+    </>
   )
 }

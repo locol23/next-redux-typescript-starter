@@ -5,9 +5,9 @@ type Props = {
   title: string
 }
 
-export const Header = (props: Props) => (
+export const Header: React.FC<Props> = ({ title }) => (
   <div>
-    <StyledHeader>{props.title}</StyledHeader>
+    <StyledHeader>{title}</StyledHeader>
   </div>
 )
 

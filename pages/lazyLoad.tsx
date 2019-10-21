@@ -1,17 +1,22 @@
 import React from 'react'
+import { NextPage } from 'next'
 import fetch from 'isomorphic-unfetch'
 import styled from '@emotion/styled'
 import { Layout } from '../components/utils/Layout'
 
-const LazyLoadComponent = (props: { res: string[] }) => (
-  <React.Fragment>
+type Props = {
+  res: string[]
+}
+
+const LazyLoadComponent: NextPage<Props> = ({ res }) => (
+  <>
     <Layout>
       <h1>Lazy Load</h1>
     </Layout>
     <Layout>
       <Note>fetch Hacker News API</Note>
     </Layout>
-    {props.res
+    {res
       .filter((_, index: number) => index < 20)
       .map((item: string) => (
         <Layout key={item}>
@@ -19,7 +24,7 @@ const LazyLoadComponent = (props: { res: string[] }) => (
           {item}
         </Layout>
       ))}
-  </React.Fragment>
+  </>
 )
 
 LazyLoadComponent.getInitialProps = async () => {

@@ -3,6 +3,6 @@ module.exports = {
     'everywhere',
     'everywhere/react',
     'everywhere/typescript',
-    'everywhere/jest'
-  ]
+    'everywhere/jest',
+  ],
 }
