@@ -7,8 +7,8 @@ type Props = {
   href: string
 }
 
-export const Button = (props: Props) => (
-  <Link href={props.href}>
+export const Button: React.FC<Props> = ({ href, buttonText }) => (
+  <Link href={href}>
     <button
       css={{
         margin: '5px',
@@ -18,7 +18,7 @@ export const Button = (props: Props) => (
       }}
       type="button"
     >
-      {props.buttonText}
+      {buttonText}
     </button>
   </Link>
 )
