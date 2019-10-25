@@ -38,7 +38,7 @@
     "@types/storybook__react": "4.0.0",
     "@typescript-eslint/eslint-plugin": "1.5.0",
     "autocannon": "3.2.1",
-    "babel-plugin-emotion": "10.0.9",
+    "babel-plugin-emotion": "10.0.22",
     "cpx": "1.5.0",
     "cross-env": "5.2.0",
     "eslint": "6.5.1",
