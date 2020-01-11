@@ -27,7 +27,7 @@
     "redux-devtools-extension": "^2.13.7"
   },
   "devDependencies": {
-    "@storybook/react": "5.2.8",
+    "@storybook/react": "5.3.0",
     "@types/jest": "23.3.14",
     "@types/next": "8.0.1",
     "@types/next-redux-wrapper": "2.0.2",
