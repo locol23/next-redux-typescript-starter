@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import styled from '@emotion/styled'
 
 type Props = {
   type: string
@@ -9,16 +10,13 @@ type Props = {
 
 export const Button: React.FC<Props> = ({ href, buttonText }) => (
   <Link href={href}>
-    <button
-      css={{
-        margin: '5px',
-        padding: '10px',
-        borderRadius: '4px',
-        backgroundColor: '#fff',
-      }}
-      type="button"
-    >
-      {buttonText}
-    </button>
+    <StyledButton type="button">{buttonText}</StyledButton>
   </Link>
 )
+
+const StyledButton = styled.button({
+  margin: '5px',
+  padding: '10px',
+  borderRadius: '4px',
+  backgroundColor: '#fff',
+})
