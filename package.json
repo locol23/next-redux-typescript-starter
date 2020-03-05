@@ -50,7 +50,7 @@
     "prettier": "1.15.3",
     "rimraf": "2.6.3",
     "ts-jest": "25.2.1",
-    "typescript": "3.7.4"
+    "typescript": "3.8.3"
   },
   "husky": {
     "hooks": {
