@@ -3601,10 +3601,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autocannon@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/autocannon/-/autocannon-3.2.1.tgz#0915c3a43b0acdf14b1ce38ef03c57979be5a5a8"
-  integrity sha512-Z4Q6rOlB66iGLKWHCWEoPqfsUV1nTOGuWFw+GU4GUTzoqAnOSi3ggAq9tTGDjZyhBf+5yc5sA+swmx9/gwsaVQ==
+autocannon@3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/autocannon/-/autocannon-3.2.2.tgz#1392c7a24510e5875903bded2eac8e86593a4311"
+  integrity sha512-cKu1vUMcsrnUCkUgOtrHpEArtGoFNpmrFWXjmIXPlYyDrYgo91PV7gXuN/3QVPqnRXE13d/n1+PKqZsmntUYmQ==
   dependencies:
     chalk "^2.4.2"
     cli-table3 "^0.5.1"
@@ -3622,7 +3622,7 @@ autocannon@3.2.1:
     progress "^2.0.3"
     reinterval "^1.1.0"
     retimer "^2.0.0"
-    timestring "^5.0.1"
+    timestring "^6.0.0"
 
 autodll-webpack-plugin@0.4.2:
   version "0.4.2"
@@ -13382,10 +13382,10 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-timestring@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/timestring/-/timestring-5.0.1.tgz#065bd9dda1bcaf7c08ec9a4841569d3bbbb6cf87"
-  integrity sha512-0VfOVpaTYqBMTEpjwcY5mB+72YYjFI44Z5F2q80ZiIyDn5pRJm+rEV1OEM8xfnf5/FdtckcrTERTp9TbrlMMHw==
+timestring@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/timestring/-/timestring-6.0.0.tgz#b0c7c331981ecf2066ce88bcfb8ee3ae32e7a0f6"
+  integrity sha512-wMctrWD2HZZLuIlchlkE2dfXJh7J2KDI9Dwl+2abPYg0mswQHfOAyQW3jJg1pY5VfttSINZuKcXoB3FGypVklA==
 
 tiny-emitter@^2.0.0:
   version "2.1.0"
