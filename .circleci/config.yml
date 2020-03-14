@@ -48,26 +48,15 @@ jobs:
           root: ~/next-redux-typescript-starter
           paths:
             - ./.next
-  deploy:
-    docker:
-      - image: circleci/node:12.16.1
-    working_directory: ~/next-redux-typescript-starter
-    steps:
-      - checkout
-      - attach_workspace:
-          at: ~/next-redux-typescript-starter
-      - run:
-          name: install now
-          command: yarn global add now
-      - run:
-          name: deploy
-          command: yarn deploy
 
 workflows:
   version: 2
-  build-deploy:
+  test-build:
     jobs:
-      - install
+      - install:
+          filters:
+            branches:
+              ignore: master
       - test:
           requires:
             - install
@@ -77,10 +66,7 @@ workflows:
       - build:
           requires:
             - install
-      - deploy:
-          requires:
-            - build
           filters:
             branches:
-              only: master
-
+              ignore: master
+ 
