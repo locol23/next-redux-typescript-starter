@@ -53,7 +53,10 @@ workflows:
   version: 2
   test-build:
     jobs:
-      - install
+      - install:
+          filters:
+            branches:
+              ignore: master
       - test:
           requires:
             - install
@@ -63,4 +66,7 @@ workflows:
       - build:
           requires:
             - install
-
+          filters:
+            branches:
+              ignore: master
+ 
