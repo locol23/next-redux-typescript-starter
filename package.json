@@ -34,7 +34,7 @@
     "@types/react-dom": "16.9.5",
     "@types/react-redux": "7.0.1",
     "@types/redux": "3.6.0",
-    "@types/storybook__react": "4.0.0",
+    "@types/storybook__react": "4.0.2",
     "@typescript-eslint/eslint-plugin": "1.5.0",
     "autocannon": "4.6.0",
     "babel-plugin-emotion": "10.0.23",
